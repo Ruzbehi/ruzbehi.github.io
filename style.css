@@ -1,13 +1,16 @@
 * {
   font-family: Garamond, Helvetica, Arial, Sans-Serif;
+  padding: 0;
+	margin: 0;
 }
 
 header {
-  background-color: #BCE6D3;
+  display: grid;
+  grid-template-columns: auto repeat(3, 1fr) auto;
+  border-bottom: 5px solid #BCE6D3;
 }
 
 main {
-  background-color: #E0FEEA;
 }
 
 h1 {
