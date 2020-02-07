@@ -2,7 +2,11 @@
   font-family: Garamond, Helvetica, Arial, Sans-Serif;
 }
 
-body {
+header {
+  background-color: #BCE6D3;
+}
+
+main {
   background-color: #E0FEEA;
 }
 
