@@ -1,3 +1,11 @@
+* {
+  font-family: Garamond, Helvetica, Arial, Sans-Serif;
+}
+
+body {
+  background-color: #E0FEEA;
+}
+
 h1 {
   color: #245735;
 }
