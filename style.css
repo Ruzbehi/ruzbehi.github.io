@@ -57,6 +57,14 @@ p {
   border-radius: 5px;
 }
 
+.verset {
+  text-align: center;
+}
+
+.arabe {
+  font-size: 24px;
+}
+
 /* mise en page du menu de navigation vertical*/
 
 body {
