@@ -113,6 +113,10 @@ main {
   padding: 0.5em 0;
   margin: 0;
 }
+.menu a {
+  text-decoration: none;
+  color: white;
+}
 .menu ul li {
   padding: 0.5em 1em 0.5em 3em;
   font-size: 0.95em;
