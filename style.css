@@ -55,31 +55,15 @@ body {
   color: white;
   padding-left: 240px;
 }
+
 main {
   position: relative;
   height: 100vh;
 }
-main .helper {
-  background: rgba(0, 0, 0, 0.2);
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -50%, 0);
-  padding: 1.2em 2em;
-  text-align: center;
-  border-radius: 20px;
-  font-size: 2em;
-  font-weight: bold;
-}
-main .helper span {
-  color: rgba(0, 0, 0, 0.2);
-  font-size: 0.4em;
-  display: block;
-}
+
 .menu {
   background: #BCE6D3;
-  height: 100vh;
+  min-height: 100vh;
   width: 240px;
   position: fixed;
   top: 0;
