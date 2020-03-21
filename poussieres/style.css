@@ -42,6 +42,7 @@ p {
 
 .poemes {
   width: fit-content;
+  max-width: 460px;
   padding: 20px;
   margin: auto;
 }
