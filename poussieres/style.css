@@ -36,8 +36,18 @@ p {
   text-align: justify;
   padding: 7px;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.6;
   color: #303336;
+}
+
+.poemes {
+  width: fit-content;
+  padding: 20px;
+  margin: auto;
+}
+
+.poemes h1, .poemes h3 {
+  margin: 20px auto;
 }
 
 .transition {
