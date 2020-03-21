@@ -122,17 +122,14 @@ main {
   transition: all 0.15s linear;
   cursor: pointer;
 }
-.menu ul li.icon-dashboard {
-  background-image: url("intro_logo.png");
+.menu ul li.icon-rupture {
+  background-image: url("rupture.png");
 }
-.menu ul li.icon-customers {
-  background-image: url("basmallah_logo.png");
+.menu ul li.icon-renouveau {
+  background-image: url("renouveau.png");
 }
-.menu ul li.icon-users {
-  background-image: url("fatiha_logo.png");
-}
-.menu ul li.icon-settings {
-  background-image: url("nour_logo.png");
+.menu ul li.icon-bilingue {
+  background-image: url("bilingue.png");
 }
 .menu ul li:hover {
   background-color: rgba(0, 0, 0, 0.1);
