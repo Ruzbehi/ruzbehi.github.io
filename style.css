@@ -5,6 +5,7 @@
 }
 
 body {
+    min-height: 100%;
     display: grid;
     grid-template-rows: 1fr auto auto 1fr;
     grid-template-columns: 15px 1fr 15px;
@@ -49,11 +50,15 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px auto;
 }
 
 .illustration {
   width: 90px;
   height: 90px;
+  margin: auto 20px;
 }
 
 .illustration img {
