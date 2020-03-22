@@ -24,7 +24,7 @@ header {
 header img {
     width: 90px;
     border-radius: 50%;
-    border: 3px solid white;
+    border: 5px solid white;
     margin: 25px auto 0px auto;
 }
 
@@ -49,17 +49,18 @@ a {
   width: 80%;
   min-width: 320px;
   max-width: 700px;
+  text-decoration: none;
+  color: 3B3C40;
 }
 
 .section {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
-  margin: 20px auto;
-  padding: 10px 10px;
+  margin: 10px auto;
   background-color: white;
   border-radius: 10px;
 }
@@ -67,12 +68,25 @@ a {
 .illustration {
   width: 90px;
   height: 90px;
-  border-radius: 10%;
+  border-radius: 50%;
   overflow: hidden;
-  margin: auto 20px;
+  margin: 15px 15px;
 }
 
 .illustration img {
   width: 100%;
   height: 100%
+}
+
+.description {
+  margin: 0px 15px 15px 15px;
+  text-align: center;
+}
+
+.description h1 {
+  color: #245735;
+}
+
+.description h3 {
+  color: #51C477;
 }
