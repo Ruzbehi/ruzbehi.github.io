@@ -1,1 +1,32 @@
+* {
+  font-family: Verdana, Garamond, Helvetica, Arial, Sans-Serif;
+  padding: 0;
+  margin: 0;
+}
 
+body {
+    display: grid;
+    grid-template-rows: 1fr auto auto 1fr;
+    grid-template-columns: 15px 1fr 15px;
+    background-color: #EDEEFF;
+}
+
+header {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img {
+    width: 90px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+main {
+    grid-row-start: 3;
+    grid-column-start: 2;
+}
