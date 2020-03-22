@@ -47,7 +47,15 @@ p {
   margin: auto;
 }
 
-.poemes h1, .poemes h3 {
+.bilingue {
+  width: 80%;
+  min-width: 340px;
+  max-width: 600px;
+  padding: 20px;
+  margin: auto;
+}
+
+.poemes h1, .poemes h3, .bilingue h1, .bilingue h3 {
   margin: 20px auto;
 }
 
