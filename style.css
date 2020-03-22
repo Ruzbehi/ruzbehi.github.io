@@ -24,6 +24,12 @@ header img {
     width: 90px;
     border-radius: 50%;
     border: 3px solid white;
+    margin: 25px auto 0px auto;
+}
+
+header h1 {
+  color: #3B3C40;
+  margin: 15px auto 25px auto;
 }
 
 main {
