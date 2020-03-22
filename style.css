@@ -85,8 +85,20 @@ a {
 
 .description h1 {
   color: #245735;
+  line-height: 1.5;
 }
 
 .description h3 {
   color: #51C477;
+  line-height: 1.5;
+}
+
+.description.poeme h1 {
+  color: #591C1C;
+  line-height: 1.5;
+}
+
+.description.poeme h3 {
+  color: #D94343;
+  line-height: 1.5;
 }
