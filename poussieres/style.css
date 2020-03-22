@@ -49,10 +49,30 @@ p {
 
 .bilingue {
   width: 80%;
-  min-width: 340px;
+  min-width: 250px;
   max-width: 600px;
   padding: 20px;
   margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bilingue p {
+  min-width: 200px;
+  width: 45%;
+}
+
+.arabe {
+  font-size: 24px;
+  text-align: right;
+}
+
+.bilingue h1, .bilingue h3 {
+  width: 100%;
+
 }
 
 .poemes h1, .poemes h3, .bilingue h1, .bilingue h3 {
