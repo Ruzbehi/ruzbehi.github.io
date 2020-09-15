@@ -139,16 +139,16 @@ main {
   cursor: pointer;
 }
 .menu ul li.icon-dashboard {
-  background-image: url("intro_logo.png");
+  background-image: url("/medias/medias_eclats/intro_logo.png");
 }
 .menu ul li.icon-customers {
-  background-image: url("basmallah_logo.png");
+  background-image: url("/medias/medias_eclats/basmallah_logo.png");
 }
 .menu ul li.icon-users {
-  background-image: url("fatiha_logo.png");
+  background-image: url("/medias/medias_eclats/fatiha_logo.png");
 }
 .menu ul li.icon-settings {
-  background-image: url("nour_logo.png");
+  background-image: url("/medias/medias_eclats/nour_logo.png");
 }
 .menu ul li:hover {
   background-color: rgba(0, 0, 0, 0.1);
