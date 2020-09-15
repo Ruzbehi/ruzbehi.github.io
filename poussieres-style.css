@@ -162,13 +162,13 @@ main {
   cursor: pointer;
 }
 .menu ul li.icon-rupture {
-  background-image: url("rupture.png");
+  background-image: url("/medias/medias_poussieres/rupture.png");
 }
 .menu ul li.icon-renouveau {
-  background-image: url("renouveau.png");
+  background-image: url("/medias/medias_poussieres/renouveau.png");
 }
 .menu ul li.icon-bilingue {
-  background-image: url("bilingue.png");
+  background-image: url("/medias/medias_poussieres/bilingue.png");
 }
 .menu ul li:hover {
   background-color: rgba(0, 0, 0, 0.1);
