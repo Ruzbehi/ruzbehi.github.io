@@ -1,0 +1,882 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #3E4348;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: white;
+    margin: 0;
+    font-family: Verdana, Garamond, Helvetica, Arial, Sans-Serif;
+    color: white;
+    padding-left: 240px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 5px solid #348CC2;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  margin: 10px;
+}
+
+main {
+    position: relative;
+}
+
+footer {
+    background-color: #A7A7A7;
+    margin: 0px;
+}
+
+footer div p, footer div p strong {
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+h1 {
+    color: #19425C;
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+h2 {
+    color: #2A709C;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+p {
+    line-height: 1.2;
+}
+
+/* Styles pour les textes */
+.small-text {
+    font-size: 14px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.no-decoration {
+    text-decoration: none;
+}
+
+.black-light {
+    color: #717178;
+}
+
+.white-text {
+    color: white;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.inside-list {
+    list-style: none;
+    padding-left: 20px;
+    position: relative;
+}
+
+.inside-list li::before {
+    content: "\2764";
+    position: absolute;
+    left: 0;
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+/* Styles pour marges et padding */
+.mts {
+    margin-top: 5px;
+}
+
+.mbs {
+    margin-bottom: 5px;
+}
+
+.mrs {
+    margin-right: 5px;
+}
+
+.mls {
+    margin-left: 5px;
+}
+
+.mtm {
+    margin-top: 10px;
+}
+
+.mbm {
+    margin-bottom: 10px;
+}
+
+.mrm {
+    margin-right: 10px;
+}
+
+.mlm {
+    margin-left: 10px;
+}
+
+.mbl {
+    margin-bottom: 15px;
+}
+
+.mtvl {
+    margin-top: 25px;
+}
+
+.mbvl {
+    margin-bottom: 25px;
+}
+
+.mrvl {
+   margin-right: 25px; 
+}
+
+.pts {
+    padding-top: 5px;
+}
+
+/* Styles pour les boxs */
+.flex-left-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+
+.flex-start-left-row {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: left;
+}
+
+.flex-center-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-left-column {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.flex-grow-full {
+    flex-grow: 1;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.min-width-250 {
+    min-width: 250px;
+}
+
+.overflow-auto {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.erase-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.erase-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.relative {
+    position: relative
+}
+
+/* Styles section films a voir */
+.left-arrow, .right-arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    cursor: pointer;
+    top: 0px;
+    height: 100%;
+    font-weight: 700;
+    font-size: 25px;
+    color: white;
+    width: 20px;
+    background-color: rgba(59, 158, 219,0.7);
+    z-index: 32;
+}
+
+.left-arrow {
+    left: 0px;
+}
+
+.right-arrow {
+    right: 0px;
+}
+
+.left-arrow:hover, .right-arrow:hover {
+    background-color: rgba(59, 158, 219,0.9);
+}
+
+.conteneur-avoir {
+    width: 167.28px;
+    transition: transform .3s;
+}
+
+.conteneur-avoir:hover {
+    transform: scale(1.05);
+}
+
+.affiche-avoir {
+    width: 167.28px;
+    height: 222.03px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* Styles section Classement */
+.conteneur-sort, .conteneur-section {
+    padding: 35px 10%;
+}
+
+.conteneur-films {
+    padding: 35px 10% 0px 10%;
+}
+
+.conteneur-films .transition, .conteneur-sort .transition {
+    margin: 35px auto auto auto;
+}
+
+.conteneur-affiche {
+    min-width: 150px;
+    width: 20%;
+    max-width: 200px;
+    position: relative;
+}
+
+.transition {
+  height: 5px;
+  width: 85%;
+  max-width: 950px;
+  margin: 20px auto 20px auto;
+  background-color: #348CC2;
+  border: 2px solid #348CC2;
+  border-radius: 5px;
+}
+
+.affiche {
+    height: auto;
+    width: 100%;
+}
+
+.slider {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.ecouter {
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: #3E4348;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.bande-annonce {
+    padding: 5px;
+    border: 1px solid red;
+    border-radius: 5px;
+    color: red;
+    background-color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/* Styles pour les etiquettes */
+.etiquette {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.no-white-space {
+    white-space: nowrap;
+}
+
+/* Nationalites */
+
+.francais, .vf {
+    background-color: #2E6787;
+    color: white;
+}
+
+.vostfr, .du-pareil-au-meme, .coreen {
+    background-color: white;
+    color: #2E6787;
+}
+
+.americain {
+    background-color: #CC0000;
+    color: white;
+}
+
+.libanais, .vosta, .avec-un-libanais, .ruralite, .nature {
+    background-color: #168F01;
+    color: white;
+}
+
+.moyen-orient {
+    background-color: #E0C381;
+    color: white;
+}
+
+.britannique {
+    background-color: #FF8300;
+    color: white;
+}
+
+.italien {
+    background-color: white;
+    color: #168F01;
+}
+
+.polonais, .danois, .autrichien, .japonais {
+    background-color: white;
+    color: #E0202D;
+}
+
+.chinois, .allemand {
+    background-color: #E0202D;
+    color: #FFF700;
+}
+
+.suedois {
+    background-color: #FFF700;
+    color: #0111FF;
+}
+
+.palestinien, .vo {
+    background-color: #3e4348;
+    color: white;
+}
+
+/* Types */
+.huis-clos {
+    background-color: #D5C2BA;
+    color: white;
+}
+
+.thriller, .violence, .violent, .mechant, .pervers, .deviance, .haine, .crime, .haletant, .malaisant, .effrayant, .avarice {
+    background-color: #290738;
+    color: white;
+}
+
+.mafieux, .mafia {
+    background-color: black;
+    color: #F50105;
+}
+
+/* Thematiques */
+
+.amour, .romance, .en-amoureux {
+    background-color: #F50105;
+    color: white;
+}
+
+.blessure, .drame, .pardon {
+    background-color: #8F2B35;
+    color: white;
+}
+
+.famille, .education, .amitie, .destin, .animation, .heureux, .drole, .comedie, .decale {
+    background-color: #F5DE25;
+    color: white;
+}
+
+.difference, .sombre, .noir {
+    background-color: #545452;
+    color: white;
+}
+
+.guerre, .patriotisme, .politique, .milieux-populaires, .pollution, .oppression, .autorite, .loyaute, .justice, .western {
+    background-color: #8A2800;
+    color: white;
+}
+
+/* Ressentis */
+
+.poetique, .merveilleux, .art, .artistique, .reveur, .contemplatif, .comedie-musicale {
+    background-color: #00BF93;
+    color: white;
+}
+
+.intimiste, .doux, .sobre, .langoureux {
+    background-color: #FFF6EB;
+}
+
+.biographie, .vie, .sincere, .juste {
+    background-color: #BF736F;
+    color: white;
+}
+
+.triste, .seul, .lent, .poignant, .tragique {
+    background-color: #618991;
+    color: white;
+}
+
+.intellectuel, .stimulant, .philosophie, .liberte, .morale, .religion, .science, .science-fiction, .histoire {
+    background-color: #71B8EB;
+    color: white;
+}
+
+.magistral, .celebrite {
+    background-color: white;
+    color: #EB002A;
+}
+
+/* Visionnage */
+
+.date {
+    background-color: #757574;
+    color: white;
+}
+
+.television {
+    background-color: #818EFF;
+    color: white;
+}
+
+.ordinateur {
+    background-color: #74668F;
+    color: white;
+}
+
+.cinema {
+    background-color: black;
+    color: white;
+}
+
+/* Conseils */
+
+/* Classements */
+.classement {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.top-5 {
+    background-color: #F50109;
+    color: white;
+}
+
+.top-10 {
+    background-color: #C151F5;
+    color: white;
+}
+
+.top-15 {
+    background-color: #5DE9F5;
+    color: white;
+}
+
+.top-20 {
+    background-color: #33F56A;
+    color: white;
+}
+
+.top-25 {
+    background-color: #B30006;
+    color: white;
+}
+
+.top-30 {
+    background-color: #8D3BB3;
+    color: white;
+}
+
+.top-35 {
+    background-color: #44A9B3;
+    color: white;
+}
+
+.top-40 {
+    background-color: #25B34D;
+    color: white;
+}
+
+.top-45 {
+    background-color: #800004;
+    color: white;
+}
+
+.top-50 {
+    background-color: #642A80;
+    color: white;
+}
+
+.top-55 {
+    background-color: #307980;
+    color: white;
+}
+
+.top-60 {
+    background-color: #1B8037;
+    color: white;
+}
+
+.top-65 {
+    background-color: #B500D9;
+    color: white;
+}
+
+.top-70 {
+    background-color: #D97616;
+    color: white;
+}
+
+.top-75 {
+    background-color: #83D916;
+    color: white;
+}
+
+.top-80 {
+    background-color: #0BAAD9;
+    color: white;
+}
+
+.top-85 {
+    background-color: #8A00A6;
+    color: white;
+}
+
+.top-90 {
+    background-color: #A65A11;
+    color: white;
+}
+
+.top-95 {
+    background-color: #64A611;
+    color: white;
+}
+
+.top-100 {
+    background-color: #0882A6;
+    color: white;
+}
+
+.mention {
+    background-color: #3B9EDB;
+    color: white;
+}
+
+/* Sorting */
+.sort {
+    border: 1px solid #3E4348;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.sort.not-selected {
+    background-color: white;
+    cursor: pointer;
+}
+
+.sort.selected {
+    background-color: #3E4348;
+    color: white;
+}
+
+/* Selecting */
+.select {
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.select:not(selected) {
+    opacity: 0.4;
+}
+
+.select.selected {
+    opacity: 1;
+}
+
+.hide-film {
+    display: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 700px) {
+    
+    .slider {
+        width: 0;
+        padding-right: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        flex-wrap: nowrap;
+    }
+    
+    .conteneur-sort {
+        padding: 35px 5%;
+    }
+
+    .conteneur-films {
+        padding: 35px 5% 0px 5%;
+    }
+    
+    .conteneur-films > .flex-left-row {
+        flex-direction: column;
+    }
+    
+    .conteneur-affiche {
+        width: 80%;
+        max-width: 250px;
+        margin-right: 0 !important;
+        margin-bottom: 15px;
+    }
+    
+    .conteneur-films > .flex-left-row > .flex-left-column {
+        width: 100%;
+    }
+    
+    .center-mobile {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .center-div-mobile {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .flex-wrap-mobile {
+        flex-wrap: wrap;
+    }
+    
+    
+}
+
+/* Menu */
+/* mise en page du menu de navigation vertical*/
+
+.menu {
+  background: #3B9EDB;
+  min-height: 100vh;
+  width: 240px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  outline: none;
+}
+
+.menu * {
+    color: white;
+    box-sizing: content-box;
+}
+
+.menu .avatar {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 2em 0.5em;
+  text-align: center;
+}
+.menu .avatar img {
+  width: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid white;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
+}
+.menu .avatar h2 {
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: white;
+}
+.menu ul {
+  list-style: none;
+  padding: 0.5em 0;
+  margin: 0;
+}
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+.menu ul li {
+  padding: 0.5em 1em 0.5em 3em;
+  font-size: 0.95em;
+  font-weight: regular;
+  background-repeat: no-repeat;
+  background-position: left 15px center;
+  background-size: auto 20px;
+  transition: all 0.15s linear;
+  cursor: pointer;
+}
+.menu ul li.icon-annonces {
+  background-image: url("./medias/medias_films/annonces.png");
+}
+.menu ul li.icon-affiche {
+  background-image: url("./medias/medias_films/affiche.png");
+}
+.menu ul li.icon-classement {
+  background-image: url("./medias/medias_films/classement.png");
+}
+.menu ul li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.menu ul li:focus {
+  outline: none;
+}
+@media screen and (max-width: 900px) and (min-width: 400px) {
+  body {
+    padding-left: 90px;
+  }
+  .menu {
+    width: 90px;
+  }
+  .menu .avatar {
+    padding: 0.5em;
+    position: relative;
+  }
+  .menu .avatar img {
+    width: 60px;
+  }
+  .menu .avatar h2 {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    margin: 0;
+    min-width: 200px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.4);
+    transform: translate3d(-20px, -50%, 0);
+    transition: all 0.15s ease-in-out;
+  }
+  .menu .avatar:hover h2 {
+    opacity: 1;
+    transform: translate3d(0px, -50%, 0);
+  }
+  .menu ul li {
+    height: 60px;
+    background-position: center center;
+    background-size: 30px auto;
+    position: relative;
+  }
+  .menu ul li span {
+    opacity: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.2em 0.5em;
+    border-radius: 4px;
+    top: 50%;
+    left: 80px;
+    transform: translate3d(-15px, -50%, 0);
+    transition: all 0.15s ease-in-out;
+  }
+  .menu ul li span:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: -5px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid rgba(0, 0, 0, 0.5);
+    transform: translateY(-50%);
+  }
+  .menu ul li:hover span {
+    opacity: 1;
+    transform: translate3d(0px, -50%, 0);
+  }
+}
+@media screen and (max-width: 400px) {
+  body {
+    padding-left: 0;
+  }
+  .menu {
+    width: 230px;
+    box-shadow: 0 0 0 100em rgba(0, 0, 0, 0);
+    transform: translate3d(-230px, 0, 0);
+    transition: all 0.3s ease-in-out;
+  }
+  .menu .smartphone-menu-trigger {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 100%;
+    background: #3B9EDB;
+  }
+  .menu .smartphone-menu-trigger:before,
+  .menu .smartphone-menu-trigger:after {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background: #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+  .menu .smartphone-menu-trigger:after {
+    top: 55%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+  .menu ul li {
+    padding: 1em 1em 1em 3em;
+    font-size: 1.2em;
+  }
+  .menu:focus {
+    transform: translate3d(0, 0, 0);
+    box-shadow: 0 0 0 100em rgba(0, 0, 0, 0.6);
+  }
+  .menu:focus .smartphone-menu-trigger {
+    pointer-events: none;
+  }
+}
