@@ -172,6 +172,9 @@ main {
 .menu ul li.icon-bilingue {
   background-image: url("/medias/medias_poussieres/bilingue.png");
 }
+.menu ul li.icon-soleil {
+  background-image: url("/medias/medias_poussieres/soleil.png");
+}
 .menu ul li:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
