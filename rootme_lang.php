@@ -1,3 +1,4 @@
 <?php
-  echo highlight_file("index.php");
+  header('Content-Type: text/plain');
+  readfile('index.php');
 ?>
